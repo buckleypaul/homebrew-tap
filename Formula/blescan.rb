@@ -1,8 +1,8 @@
 class Blescan < Formula
   desc "Terminal UI application for scanning and analyzing BLE device advertisements"
   homepage "https://github.com/buckleypaul/blescan"
-  url "https://github.com/buckleypaul/blescan/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "3e1502ad249ddd2aaf5bb42f1d77c31916de9c584a09bcebd8b6366ba5f51c16"
+  url "https://github.com/buckleypaul/blescan/archive/refs/tags/v0.2.1.tar.gz"
+  sha256 "35d550931481eb4a05025f3b55770aa25620769041d01db3ca74c76287f17f3d"
   license "MIT"
 
   depends_on "go" => :build
