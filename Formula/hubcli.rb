@@ -1,8 +1,8 @@
 class Hubcli < Formula
   desc "Terminal UI application for Hubble Network device management"
   homepage "https://github.com/buckleypaul/hubcli"
-  url "https://github.com/buckleypaul/hubcli/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "2b48dc37befbec7b7bc8ca2ece7e61f7cda752dbf6fb30d89b5c86351ddfae0b"
+  url "https://github.com/buckleypaul/hubcli/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "a8c13f9a3578b391769cd723458a2e3abee7943332c5801e5cf555923360ee28"
   license "MIT"
 
   depends_on "go" => :build
