@@ -13,6 +13,7 @@ brew tap buckleypaul/tap
 | Formula | Description |
 |---------|-------------|
 | blescan | Terminal UI application for scanning and analyzing BLE device advertisements |
+| haide | AI File Exclusion Manager for Git |
 
 ## Usage
 
@@ -20,4 +21,5 @@ After tapping, install any formula:
 
 ```bash
 brew install blescan
+brew install haide
 ```
