@@ -7,8 +7,14 @@ class Mdglow < Formula
   sha256 "c98f3774ece7919e7d508edfd746f09b5ef696a3256eb9536a77cb8808f51043"
   license "MIT"
 
-  depends_on "python@3.13"
+  depends_on "jpeg-turbo"
+  depends_on "libpng"
+  depends_on "libtiff"
+  depends_on "little-cms2"
+  depends_on "openjpeg"
   depends_on "pango"
+  depends_on "python@3.13"
+  depends_on "webp"
 
   resource "brotli" do
     url "https://files.pythonhosted.org/packages/f7/16/c92ca344d646e71a43b8bb353f0a6490d7f6e06210f8554c8f874e454285/brotli-1.2.0.tar.gz"
