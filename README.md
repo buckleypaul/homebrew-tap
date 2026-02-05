@@ -14,6 +14,7 @@ brew tap buckleypaul/tap
 |---------|-------------|
 | blescan | Terminal UI application for scanning and analyzing BLE device advertisements |
 | haide | AI File Exclusion Manager for Git |
+| mdglow | Convert Markdown files to beautifully styled PDFs |
 
 ## Usage
 
@@ -22,4 +23,5 @@ After tapping, install any formula:
 ```bash
 brew install blescan
 brew install haide
+brew install mdglow
 ```
