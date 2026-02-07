@@ -5,21 +5,21 @@
 class Haide < Formula
   desc "AI File Exclusion Manager for Git"
   homepage "https://github.com/buckleypaul/haide"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/buckleypaul/haide/releases/download/v0.2.0/haide_0.2.0_darwin_amd64.tar.gz"
-      sha256 "00ee3d4dc6dc42b964635f2eac7b0fa4839727ac220451b0a2e85edd5de810ca"
+      url "https://github.com/buckleypaul/haide/releases/download/v0.3.0/haide_0.3.0_darwin_amd64.tar.gz"
+      sha256 "e9cf06b8bc1092a0b4dca44afaa47999fdc0da2ce4dbd4f5fba3a214ec796495"
 
       def install
         bin.install "haide"
       end
     end
     on_arm do
-      url "https://github.com/buckleypaul/haide/releases/download/v0.2.0/haide_0.2.0_darwin_arm64.tar.gz"
-      sha256 "b0dca6983bf866a5d17e0b7183956dfb56a8a3ac380cfc3ed1525e18987954f8"
+      url "https://github.com/buckleypaul/haide/releases/download/v0.3.0/haide_0.3.0_darwin_arm64.tar.gz"
+      sha256 "d8813ad96eca095803ac515326a202e5713ea02048cbf5385be2b1a75492767e"
 
       def install
         bin.install "haide"
@@ -30,8 +30,8 @@ class Haide < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/buckleypaul/haide/releases/download/v0.2.0/haide_0.2.0_linux_amd64.tar.gz"
-        sha256 "e3e5fa8bedd74ec9e41ad126464faf6452991235e610f5f8433874a10eb62cf0"
+        url "https://github.com/buckleypaul/haide/releases/download/v0.3.0/haide_0.3.0_linux_amd64.tar.gz"
+        sha256 "aa249f37e7f38c49ebbef67a181fe5214754439c4c2c262fc52b74ac021abe70"
 
         def install
           bin.install "haide"
@@ -40,8 +40,8 @@ class Haide < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/buckleypaul/haide/releases/download/v0.2.0/haide_0.2.0_linux_arm64.tar.gz"
-        sha256 "eecec37edc0d82ddabc786da91dacfcb711c55424994cbb72d7319776ef260e0"
+        url "https://github.com/buckleypaul/haide/releases/download/v0.3.0/haide_0.3.0_linux_arm64.tar.gz"
+        sha256 "d0e7f5068e403f05c5a1fcaa2923e0fedf4a8bd44ea703d9dcba3bcffa974a8d"
 
         def install
           bin.install "haide"
