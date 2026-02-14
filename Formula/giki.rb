@@ -11,7 +11,7 @@ class Giki < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/buckleypaul/giki/releases/download/v0.2.0/giki_Darwin_x86_64.tar.gz"
-      sha256 "02cadb9900eaf508dd2c2dcf1fa8bcd875b6b45aba22c57ccfed5127be748c2f"
+      sha256 "6ce9a4670c401b9fdb2d71cc0a47afc1cb5aba58ce4189e4c05058701f09e88b"
 
       def install
         bin.install "giki"
@@ -19,7 +19,7 @@ class Giki < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/buckleypaul/giki/releases/download/v0.2.0/giki_Darwin_arm64.tar.gz"
-      sha256 "12f056b4219951478a4455af5924f9b6dbeb36549dcc583e1a75cc7ea5ca61f3"
+      sha256 "8be5f8a3013ac42b194f90837d5683e91741e171afcd75a6e33472cc03b33a0b"
 
       def install
         bin.install "giki"
@@ -30,14 +30,14 @@ class Giki < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/buckleypaul/giki/releases/download/v0.2.0/giki_Linux_x86_64.tar.gz"
-      sha256 "56e2b484b1000715c70d6abe3a2f2e947487d5f4bd52b1e14ec03a05de4306b5"
+      sha256 "d2d676a8d163f672d924591fc16b00785d63dfdfd6c7254879b24acc32ebdaf4"
       def install
         bin.install "giki"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/buckleypaul/giki/releases/download/v0.2.0/giki_Linux_arm64.tar.gz"
-      sha256 "450404f4aff846acafd8eb48e91ee588238504271fe37f06aa990cd0bf63972b"
+      sha256 "0bc72babfc4fdb010a22df2118b3a16aba08671d6e53cce010dc5624b6d334f5"
       def install
         bin.install "giki"
       end
