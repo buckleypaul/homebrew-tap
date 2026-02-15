@@ -5,21 +5,21 @@
 class Giki < Formula
   desc "Turn any git repository into a browsable wiki"
   homepage "https://github.com/buckleypaul/giki"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/buckleypaul/giki/releases/download/v0.3.0/giki_Darwin_x86_64.tar.gz"
-      sha256 "de7e87ae541f7cfee5b892b6870b77501b49db11676754c0279d954bc257b0f2"
+      url "https://github.com/buckleypaul/giki/releases/download/v0.4.0/giki_Darwin_x86_64.tar.gz"
+      sha256 "97e0b4ea52a414fb01c871d62f84d373b9bc42653ba65800a5f57aa03d4208d4"
 
       def install
         bin.install "giki"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/buckleypaul/giki/releases/download/v0.3.0/giki_Darwin_arm64.tar.gz"
-      sha256 "6f6b22cf05b7c2f91e196e91900acd6ccff447be00d5be6011b1fc8c8657d8b5"
+      url "https://github.com/buckleypaul/giki/releases/download/v0.4.0/giki_Darwin_arm64.tar.gz"
+      sha256 "7bfba612b75f8627882b1c0590c8f78940e64e6e04ccdd7de7e77cd352d31bb3"
 
       def install
         bin.install "giki"
@@ -29,15 +29,15 @@ class Giki < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/buckleypaul/giki/releases/download/v0.3.0/giki_Linux_x86_64.tar.gz"
-      sha256 "ec36f30caf95e4c4233fb63f77c12da296c5b95502b0276e2b1b7c63ad60b00f"
+      url "https://github.com/buckleypaul/giki/releases/download/v0.4.0/giki_Linux_x86_64.tar.gz"
+      sha256 "949150e545aecde466e542cedaff858399759b6dc4b0747bf7ff21eb244595b9"
       def install
         bin.install "giki"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/buckleypaul/giki/releases/download/v0.3.0/giki_Linux_arm64.tar.gz"
-      sha256 "b6ca211423a74d76783f111ce5c6aa36bf1424c605eaecd93df6746ccc7abfe8"
+      url "https://github.com/buckleypaul/giki/releases/download/v0.4.0/giki_Linux_arm64.tar.gz"
+      sha256 "2608c976fe8e960402677a61c96f54226660d8af3f8aa624259313eb91ca977a"
       def install
         bin.install "giki"
       end
