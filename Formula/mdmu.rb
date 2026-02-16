@@ -5,21 +5,21 @@
 class Mdmu < Formula
   desc "Terminal UI tool for annotating markdown files with line-level comments"
   homepage "https://github.com/buckleypaul/mdmu"
-  version "0.1.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/buckleypaul/mdmu/releases/download/v0.1.0/mdmu_Darwin_x86_64.tar.gz"
-      sha256 "0d4088fec840f44b9a8c7e3f1557cd00b2d3e27a8a4a146d5f29572b5a961b72"
+      url "https://github.com/buckleypaul/mdmu/releases/download/v0.3.0/mdmu_Darwin_x86_64.tar.gz"
+      sha256 "e7e57b9338c973e72c73231ca41c55d303007533003762a7cb7365d50279055d"
 
       def install
         bin.install "mdmu"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/buckleypaul/mdmu/releases/download/v0.1.0/mdmu_Darwin_arm64.tar.gz"
-      sha256 "2bc857ce29a6b6b03045e82063f9bab9ddeb225f298708dfc83e9f39b8a834d7"
+      url "https://github.com/buckleypaul/mdmu/releases/download/v0.3.0/mdmu_Darwin_arm64.tar.gz"
+      sha256 "edb40142d5477d6c1a2738c208b4de024a497e06ca21c4bc8355a91fb9f30e1f"
 
       def install
         bin.install "mdmu"
@@ -29,15 +29,15 @@ class Mdmu < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/buckleypaul/mdmu/releases/download/v0.1.0/mdmu_Linux_x86_64.tar.gz"
-      sha256 "bfae943a153056d483f38c2f3d2c59c42a5d827f14fc427fc7ae42fa65cdf006"
+      url "https://github.com/buckleypaul/mdmu/releases/download/v0.3.0/mdmu_Linux_x86_64.tar.gz"
+      sha256 "35d315965b5dd8a187bac71dbf12dba49c46503ec4860d1d050e14483bc05bfd"
       def install
         bin.install "mdmu"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/buckleypaul/mdmu/releases/download/v0.1.0/mdmu_Linux_arm64.tar.gz"
-      sha256 "50dd5049206e92ecaf327ca842415002205e8f95105b3705258c408a3a7a9751"
+      url "https://github.com/buckleypaul/mdmu/releases/download/v0.3.0/mdmu_Linux_arm64.tar.gz"
+      sha256 "9e995e017958ca275f3820d77579f3ceb629dab4972f7510e68fad42ff1ecc3a"
       def install
         bin.install "mdmu"
       end
