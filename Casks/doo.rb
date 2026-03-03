@@ -13,6 +13,11 @@ cask "doo" do
 
   binary "#{appdir}/Doo.app/Contents/MacOS/DooCLI", target: "doo"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Doo.app"]
+  end
+
   zap trash: [
     "~/.local/share/doo",
     "~/.config/doo",
