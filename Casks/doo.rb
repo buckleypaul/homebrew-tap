@@ -1,6 +1,6 @@
 cask "doo" do
-  version "0.2.0"
-  sha256 "PLACEHOLDER_REPLACE_AFTER_FIRST_RELEASE"
+  version "0.3.0"
+  sha256 "75b624b1b287acb94be296fe1ce09ab25c7762e680658a502291d4884fdaeccc"
 
   url "https://github.com/buckleypaul/doo/releases/download/v#{version}/Doo.zip"
   name "Doo"
