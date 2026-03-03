@@ -5,23 +5,23 @@
 class Mdmu < Formula
   desc "Terminal UI tool for annotating markdown files with line-level comments"
   homepage "https://github.com/buckleypaul/mdmu"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/buckleypaul/mdmu/releases/download/v0.3.0/mdmu_Darwin_x86_64.tar.gz"
-      sha256 "e7e57b9338c973e72c73231ca41c55d303007533003762a7cb7365d50279055d"
+      url "https://github.com/buckleypaul/mdmu/releases/download/v0.4.0/mdmu_Darwin_x86_64.tar.gz"
+      sha256 "1de5224b1c2b997e2fe4dde111f1d017db696553c88a98527de49730f7978861"
 
-      def install
+      define_method(:install) do
         bin.install "mdmu"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/buckleypaul/mdmu/releases/download/v0.3.0/mdmu_Darwin_arm64.tar.gz"
-      sha256 "edb40142d5477d6c1a2738c208b4de024a497e06ca21c4bc8355a91fb9f30e1f"
+      url "https://github.com/buckleypaul/mdmu/releases/download/v0.4.0/mdmu_Darwin_arm64.tar.gz"
+      sha256 "7fde3ef92fdf3eaebdcbf4884f6a3c75fc1eaf043fb6e1a90acc283cd627c48e"
 
-      def install
+      define_method(:install) do
         bin.install "mdmu"
       end
     end
@@ -29,16 +29,16 @@ class Mdmu < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/buckleypaul/mdmu/releases/download/v0.3.0/mdmu_Linux_x86_64.tar.gz"
-      sha256 "35d315965b5dd8a187bac71dbf12dba49c46503ec4860d1d050e14483bc05bfd"
-      def install
+      url "https://github.com/buckleypaul/mdmu/releases/download/v0.4.0/mdmu_Linux_x86_64.tar.gz"
+      sha256 "e3f1dc07a234e17ba2eb969b8e75774d32be452e11803fdba1c1210fb1d89062"
+      define_method(:install) do
         bin.install "mdmu"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/buckleypaul/mdmu/releases/download/v0.3.0/mdmu_Linux_arm64.tar.gz"
-      sha256 "9e995e017958ca275f3820d77579f3ceb629dab4972f7510e68fad42ff1ecc3a"
-      def install
+      url "https://github.com/buckleypaul/mdmu/releases/download/v0.4.0/mdmu_Linux_arm64.tar.gz"
+      sha256 "09ab40a49c3a6e74e1c6fab1ab46c8a589cdae8216da2ddbd29a938f785c3d0a"
+      define_method(:install) do
         bin.install "mdmu"
       end
     end
