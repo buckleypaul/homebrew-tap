@@ -15,6 +15,7 @@ brew tap buckleypaul/tap
 | blescan | Terminal UI application for scanning and analyzing BLE device advertisements |
 | haide | AI File Exclusion Manager for Git |
 | mdglow | Convert Markdown files to beautifully styled PDFs |
+| zmkonfig | Native macOS keymap editor for ZMK keyboards |
 
 ## Usage
 
